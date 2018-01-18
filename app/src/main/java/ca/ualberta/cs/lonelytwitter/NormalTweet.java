@@ -7,13 +7,24 @@ import java.util.Date;
  */
 
 public class NormalTweet extends Tweet {
+    /**
+     * @param message
+     */
     NormalTweet(String message) {
         super(message);
     }
+
+    /**
+     * @param message
+     * @param date
+     */
     NormalTweet(String message, Date date) {
         super(message, date);
     }
 
+    /**
+     * @return
+     */
     public boolean isImportant() {
         return false;
     }

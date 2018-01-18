@@ -7,9 +7,24 @@ import java.util.Date;
  */
 
 public interface Tweetable {
+    /**
+     * @return
+     */
     String getMessage();
-    void setMessage() throws TweetTooLongException;
 
+    /**
+     * @param message
+     * @throws TweetTooLongException
+     */
+    void setMessage(String message) throws TweetTooLongException;
+
+    /**
+     * @return
+     */
     Date getDate();
-    void setDate();
+
+    /**
+     * @param date
+     */
+    void setDate(Date date);
 }

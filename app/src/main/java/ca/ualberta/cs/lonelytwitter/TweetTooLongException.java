@@ -6,10 +6,16 @@ import java.lang.Exception;
  */
 
 public class TweetTooLongException extends Exception {
+    /**
+     * @param e
+     */
     public TweetTooLongException(String e) {
         super(e);
     }
 
+    /**
+     *
+     */
     public TweetTooLongException() {
         super();
     }
