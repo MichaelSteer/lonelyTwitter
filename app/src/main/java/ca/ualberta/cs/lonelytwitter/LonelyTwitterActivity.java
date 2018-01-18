@@ -41,8 +41,16 @@ public class LonelyTwitterActivity extends Activity {
 				setResult(RESULT_OK);
 				String text = bodyText.getText().toString();
 
-				Tweet newtweet = new Tweet(text);
-				Tweet newtweet2 = new Tweet(text, new Date(System.currentTimeMillis()));
+				ImportantTweet newtweet = new ImportantTweet(text);
+				NormalTweet newtweet2 = new NormalTweet(text, new Date(System.currentTimeMillis()));
+
+				ImportantTweet imptweet = new ImportantTweet("Important Tweet");
+				NormalTweet normtweet = new NormalTweet("Normal Tweet");
+
+				ArrayList<Tweet> alltweets = new ArrayList<Tweet>();
+				alltweets.add(newtweet);
+				alltweets.add(imptweet);
+				alltweets.add(normtweet);
 
 				try {
 					newtweet.setMessage("This is modified");

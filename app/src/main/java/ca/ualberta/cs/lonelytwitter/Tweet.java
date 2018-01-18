@@ -8,13 +8,16 @@ import java.util.Date;
 
 
 
-public class Tweet {
+public abstract class Tweet implements Tweetable {
+
 
     private String message;
     private Date date;
 
+
     Tweet(String message) {
         this.message = message;
+        this.date = new Date(System.currentTimeMillis());
     }
 
     Tweet(String message, Date date) {
@@ -22,7 +25,7 @@ public class Tweet {
         this.date = date;
     }
 
-    public Date getDate() {
+    public Date getDate()  {
         return this.date;
     }
 
@@ -40,4 +43,6 @@ public class Tweet {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    public abstract boolean isImportant();
 }
