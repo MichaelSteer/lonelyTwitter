@@ -32,6 +32,7 @@ public class LonelyTwitterActivity extends Activity {
 
 		bodyText = (EditText) findViewById(R.id.body);
 		Button saveButton = (Button) findViewById(R.id.save);
+		Button clearButton = (Button) findViewById(R.id.clear);
 		oldTweetsList = (ListView) findViewById(R.id.oldTweetsList);
 
 		saveButton.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +40,16 @@ public class LonelyTwitterActivity extends Activity {
 			public void onClick(View v) {
 				setResult(RESULT_OK);
 				String text = bodyText.getText().toString();
+
+				Tweet newtweet = new Tweet(text);
+				Tweet newtweet2 = new Tweet(text, new Date(System.currentTimeMillis()));
+
+				try {
+					newtweet.setMessage("This is modified");
+				} catch (TweetTooLongException e) {
+					e.printStackTrace();
+				}
+
 				saveInFile(text, new Date(System.currentTimeMillis()));
 				finish();
 
@@ -81,7 +92,7 @@ public class LonelyTwitterActivity extends Activity {
 		try {
 			FileOutputStream fos = openFileOutput(FILENAME,
 					Context.MODE_APPEND);
-			fos.write(new String(date.toString() + " | " + text)
+			fos.write(new String(date.toString() + " | " + text + "\n")
 					.getBytes());
 			fos.close();
 		} catch (FileNotFoundException e) {
