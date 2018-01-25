@@ -31,10 +31,11 @@ import static android.content.ContentValues.TAG;
 
 public class LonelyTwitterActivity extends Activity {
 
-	private static final String FILENAME = "jsonfile5.sav";
+	private static final String FILENAME = "jsonfile575.sav";
 	private EditText bodyText;
 	private ListView oldTweetsList;
 	private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
+    ArrayAdapter<Tweet> adapter;
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -44,8 +45,10 @@ public class LonelyTwitterActivity extends Activity {
 		bodyText = (EditText) findViewById(R.id.body);
 		Button saveButton = (Button) findViewById(R.id.save);
 		Button clearButton = (Button) findViewById(R.id.clear);
-		oldTweetsList = (ListView) findViewById(R.id.oldTweetsList);
 
+		oldTweetsList = (ListView) findViewById(R.id.oldTweetsList);
+        loadFromFile();
+        adapter = new ArrayAdapter<Tweet>(this, R.layout.list_item, tweets);
 
 		saveButton.setOnClickListener(new View.OnClickListener() {
 
@@ -54,12 +57,24 @@ public class LonelyTwitterActivity extends Activity {
 				String text = bodyText.getText().toString();
                 NormalTweet newtweet = new NormalTweet(text, new Date(System.currentTimeMillis()));
                 tweets.add(newtweet);
+
+                adapter.notifyDataSetChanged();
                 saveInFile(tweets);
 			}
 		});
 
+		clearButton.setOnClickListener(new View.OnClickListener() {
+		    public void onClick(View v) {
+		        setResult(RESULT_OK);
+		        tweets.clear();
 
-        loadFromFile();
+		        adapter.notifyDataSetChanged();
+                saveInFile(tweets);
+            }
+        });
+
+
+
         if (tweets == null) {
             Log.d(TAG, "onCreate: WHY ARE YOU NULL WTF");
         }
@@ -69,8 +84,7 @@ public class LonelyTwitterActivity extends Activity {
 	protected void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
-		ArrayAdapter<Tweet> adapter = new ArrayAdapter<Tweet>(this,
-				R.layout.list_item, tweets);
+
 		oldTweetsList.setAdapter(adapter);
 	}
 
@@ -81,6 +95,9 @@ public class LonelyTwitterActivity extends Activity {
 			Gson gson = new Gson();
 			Type ListType = new TypeToken<ArrayList<Tweet>>(){}.getType();
 			tweets = gson.fromJson(in, ListType);
+			if (tweets == null) {
+			    tweets = new ArrayList<Tweet>();
+            }
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
