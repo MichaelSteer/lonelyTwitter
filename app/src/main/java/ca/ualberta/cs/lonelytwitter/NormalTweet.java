@@ -10,7 +10,7 @@ public class NormalTweet extends Tweet {
     /**
      * @param message
      */
-    NormalTweet(String message) {
+    NormalTweet(String message) throws TweetTooLongException {
         super(message);
     }
 

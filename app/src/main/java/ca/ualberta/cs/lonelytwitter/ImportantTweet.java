@@ -10,7 +10,7 @@ public class ImportantTweet extends Tweet {
     /**
      * @param message
      */
-    ImportantTweet(String message) {
+    ImportantTweet(String message) throws TweetTooLongException {
         super(message);
     }
 

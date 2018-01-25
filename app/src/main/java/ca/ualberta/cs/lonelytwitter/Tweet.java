@@ -1,5 +1,7 @@
 package ca.ualberta.cs.lonelytwitter;
 
+import com.google.gson.annotations.Expose;
+
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -13,15 +15,25 @@ import java.util.Set;
 public abstract class Tweet implements Tweetable {
 
 
+    @Expose
     private String message;
+
+    @Expose
     private Date date;
+
+    @Expose
     private Set<Mood> moods;
+
+    public static int MessageLengthLimit;
 
     /**
      * @param message
      */
-    Tweet(String message) {
+    Tweet(String message) throws TweetTooLongException {
         moods = new HashSet<Mood>();
+        if (message.length() < Tweet.MessageLengthLimit) {
+            throw new TweetTooLongException();
+        }
         this.message = message;
         this.date = new Date(System.currentTimeMillis());
     }
@@ -58,7 +70,7 @@ public abstract class Tweet implements Tweetable {
      * @throws TweetTooLongException
      */
     public void setMessage(String message) throws TweetTooLongException {
-        if (message.length() > 160) {
+        if (message.length() > Tweet.MessageLengthLimit) {
             throw new TweetTooLongException();
         }
         this.message = message;
@@ -89,4 +101,9 @@ public abstract class Tweet implements Tweetable {
      * @return
      */
     public abstract boolean isImportant();
+
+    @Override
+    public String toString() {
+        return message;
+    }
 }
