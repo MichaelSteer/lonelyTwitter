@@ -21,7 +21,7 @@ import java.util.Date;
 public interface Tweetable {
     /**
      * Returns the Message contained within the tweet
-     * @return {@String message}
+     * @return {@code String} the message
      */
     String getMessage();
 

@@ -18,10 +18,6 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by steer on 1/17/18.
- */
-
 
 /**
  * Abstract base class for a Tweet. Implements the Tweetable Interface
@@ -38,12 +34,12 @@ public abstract class Tweet implements Tweetable {
     @Expose
     private Set<Mood> moods;
 
-    public static int MessageLengthLimit;
+    private static int MessageLengthLimit;
 
     /**
      * Constructor. Takes in a message as an input
      * @param message {@code String} The message that the tweet will contain
-     * @Throws TweetTooLongException Thrown when the tweet is longer than 80 characters
+     * @throws TweetTooLongException Thrown when the tweet is longer than 80 characters
      */
     Tweet(String message) throws TweetTooLongException {
         moods = new HashSet<Mood>();
@@ -127,7 +123,7 @@ public abstract class Tweet implements Tweetable {
     public abstract boolean isImportant();
 
     /**
-     * Converts the tweet into a fomratted string
+     * Converts the tweet into a formatted string
      * @return {@code String} the string formatted tweet
      */
     @Override
