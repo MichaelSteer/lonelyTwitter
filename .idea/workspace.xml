@@ -14,10 +14,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5137ec8-6019-42ba-8970-bc3dfe471d09" name="Default" comment="Fixed a few warnings">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="c5137ec8-6019-42ba-8970-bc3dfe471d09" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,17 +46,17 @@
             <state relative-caret-position="-3111">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1517445596000" expanded="true" signature="174928:174945" ph="..." />
-                <marker date="1517445596000" expanded="true" signature="174928:174963" ph="..." />
-                <marker date="1517445596000" expanded="true" signature="174928:174976" ph="..." />
-                <marker date="1517445596000" expanded="true" signature="174928:174991" ph="..." />
-                <marker date="1517445596000" expanded="true" signature="175026:175411" ph="..." />
-                <marker date="1517445596000" expanded="true" signature="175039:175396" ph="..." />
-                <marker date="1517445596000" expanded="true" signature="175072:175382" ph="..." />
-                <marker date="1517445596000" expanded="true" signature="175091:175367" ph="..." />
-                <marker date="1517445596000" expanded="true" signature="175169:175347" ph="..." />
-                <marker date="1517445596000" expanded="true" signature="175209:175313" ph="..." />
-                <marker date="1517445596000" expanded="true" signature="175230:175291" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="174982:174999" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="174982:175017" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="174982:175030" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="174982:175045" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="175080:175465" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="175093:175450" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="175126:175436" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="175145:175421" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="175223:175401" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="175263:175367" ph="..." />
+                <marker date="1517445755000" expanded="true" signature="175284:175345" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1965,7 +1963,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517445692391" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517445895727" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2013,7 +2011,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517445692391" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517445895727" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2175,7 +2173,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517445692392" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517445895728" />
       </method>
     </configuration>
     <list size="1">
@@ -2239,7 +2237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517445391162</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Compiled Javadocs.">
+      <created>1517445735044</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1517445735044</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2261,9 +2266,9 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23153253" sideWeight="0.5170394" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23153253" sideWeight="0.51916933" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.49574015" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23153253" sideWeight="0.48296058" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23153253" sideWeight="0.48083067" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.48935038" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2297,7 +2302,8 @@
     <MESSAGE value="Switched the file saving method from text to using JSON via Googles &#10;GSON" />
     <MESSAGE value="Fixed button functionality" />
     <MESSAGE value="Fixed a few warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a few warnings" />
+    <MESSAGE value="Compiled Javadocs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Compiled Javadocs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2628,17 +2634,17 @@
         <state relative-caret-position="-3111">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517445596000" expanded="true" signature="174928:174945" ph="..." />
-            <marker date="1517445596000" expanded="true" signature="174928:174963" ph="..." />
-            <marker date="1517445596000" expanded="true" signature="174928:174976" ph="..." />
-            <marker date="1517445596000" expanded="true" signature="174928:174991" ph="..." />
-            <marker date="1517445596000" expanded="true" signature="175026:175411" ph="..." />
-            <marker date="1517445596000" expanded="true" signature="175039:175396" ph="..." />
-            <marker date="1517445596000" expanded="true" signature="175072:175382" ph="..." />
-            <marker date="1517445596000" expanded="true" signature="175091:175367" ph="..." />
-            <marker date="1517445596000" expanded="true" signature="175169:175347" ph="..." />
-            <marker date="1517445596000" expanded="true" signature="175209:175313" ph="..." />
-            <marker date="1517445596000" expanded="true" signature="175230:175291" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="174982:174999" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="174982:175017" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="174982:175030" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="174982:175045" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="175080:175465" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="175093:175450" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="175126:175436" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="175145:175421" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="175223:175401" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="175263:175367" ph="..." />
+            <marker date="1517445755000" expanded="true" signature="175284:175345" ph="..." />
           </folding>
         </state>
       </provider>
